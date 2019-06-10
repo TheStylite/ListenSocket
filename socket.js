@@ -1,11 +1,4 @@
-// import io from 'socket.io-client';       //这里是用的第三方库socket.io-client，暂时先用原生的websocket
-import  { Storage } from    '../utils/storage-utils'
 
-import app from '../../main';
-
-function localToken() {
-    return Storage.load( 'user' ).token;
-}
 
                         //单例模式 + 发布订阅者模式 + 链式设计模式 封装socket，
 
